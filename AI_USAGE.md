@@ -186,6 +186,9 @@ No additional implementation prompts were received in this coding turn beyond th
 
 ## Verification performed
 
-The agent extracted the source DOCX text successfully. The bundled DOCX renderer could not render the source brief because `soffice.exe` was not available in the runtime, so visual inspection of that source document was not possible.
-
-The application verification results and any browser checks are recorded in the final handoff response and should only be updated with commands actually run.
+- The source DOCX text was extracted successfully. The bundled DOCX renderer could not render the source brief because `soffice.exe` was not available in the runtime, so visual inspection of that source document was not possible.
+- `npm test` passed: 1 test file and 7 tests passed.
+- `npm run lint` passed with no reported errors.
+- `npm run build` passed and generated the Vite production bundle.
+- The local app was opened in the available in-app browser. Search, result count, combined filters, empty state, and reset behavior were checked. The available viewport was mobile-width; the page had no horizontal overflow and keyboard focus moved through the controls with visible focus styles.
+- The browser runtime did not expose a separate desktop viewport control, so a live desktop screenshot was not verified. Desktop layout is represented by the responsive CSS and was covered by the production build, but this is not claimed as a live desktop browser check.
