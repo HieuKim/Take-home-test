@@ -179,6 +179,7 @@ The agent:
 - Confirmed the workspace was empty and no `AGENTS.md` file was present.
 - Created the Vite/React project structure, local dataset, controlled filters, derived filtering logic, responsive CSS, tests, README, and this record.
 - Added explicit accessible labels, keyboard-visible focus states, semantic list/article markup, text status labels, and a live result count.
+- After a mobile review identified a narrow-name layout issue, moved each status badge onto an explicit second grid row at widths up to 420px so names remain readable.
 - Chose React 18 and Vite 6 so the selected dependency set is compatible with the available Node.js 20.16 runtime.
 - Added the required test scenarios and made `npm test` run once with `vitest run`.
 
@@ -191,4 +192,5 @@ No additional implementation prompts were received in this coding turn beyond th
 - `npm run lint` passed with no reported errors.
 - `npm run build` passed and generated the Vite production bundle.
 - The local app was opened in the available in-app browser. Search, result count, combined filters, empty state, and reset behavior were checked. The available viewport was mobile-width; the page had no horizontal overflow and keyboard focus moved through the controls with visible focus styles.
+- Edge CDP checks at 320px, 375px, and 420px confirmed readable user-name widths, the status badge on the second row, and no horizontal overflow.
 - The browser runtime did not expose a separate desktop viewport control, so a live desktop screenshot was not verified. Desktop layout is represented by the responsive CSS and was covered by the production build, but this is not claimed as a live desktop browser check.

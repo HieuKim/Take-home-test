@@ -403,12 +403,27 @@ h2 {
   }
 
   .user-card {
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    align-items: start;
+    column-gap: 14px;
+    row-gap: 10px;
     padding: 13px;
   }
 
+  .avatar {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .user-details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .status-badge {
-    margin-left: 58px;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 0;
   }
 }
