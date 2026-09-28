@@ -4,13 +4,17 @@ AI assistance was used to read the supplied exercise brief, plan the implementat
 
 ## Prompts received
 
-The following earlier prompts were provided by the user:
+The following earlier prompts were provided by the user. They are preserved verbatim in Vietnamese, with English translations for readability:
 
 > Hãy đọc đề bài và lên plan để làm nhé
 
+English translation: “Please read the exercise brief and create an implementation plan.”
+
 > Đồng ý viết một cái prompt cụ thể để giao agent khác code nhé
 
-The deployment prompt received for this implementation is recorded verbatim below.
+English translation: “Agreed, write a specific prompt to hand off to another coding agent.”
+
+The deployment prompt received for this implementation is recorded verbatim below in Vietnamese, as required by the exercise. The surrounding documentation and summary are written in English.
 
 ```text
 Hãy triển khai hoàn chỉnh bài take-home “User Directory” trong workspace:
